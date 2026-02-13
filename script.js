@@ -6,7 +6,7 @@ document.getElementById("downloadBtn").addEventListener("click", () => {
   const link = document.createElement("a");
 
   link.href = "assets/resume.pdf";
-  link.download = "My_Resume.pdf";
+  link.download = "SoominLee_Resume.pdf";
 
   document.body.appendChild(link);
   link.click();

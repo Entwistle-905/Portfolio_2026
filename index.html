@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Soomin's Portfolio</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Favicon -->
+<link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+
+</head>
+
+
+<body>
+
+<!-- HERO -->
+
+<header>
+
+  <h1>Soomin Lee</h1>
+  <p>3D Environment Artist / 3D Generalist</p>
+
+  <button id="downloadBtn">Download Resume</button>
+
+</header>
+
+
+<!-- ABOUT -->
+
+<section id="about">
+
+  <img src="assets/profile.jpg" alt="Profile">
+
+  <div>
+
+    <h2>About Me</h2>
+
+    <p>
+    I am a 3D Environment Artist (3D Generalist) based in Canada.<br><br>
+
+    I specialize in creating immersive, realistic game environments with a strong focus on visual storytelling, 
+    composition, and modular workflows. 
+    <br> For over a year, I have worked at an independent studio, 
+    contributing to a realistic sandbox game and a casual 2D+3D RPG.
+
+    <br><br>My primary focus is realistic environment art and 
+    narrative-driven world design, but I am also open to working in related areas 
+    such as VFX, texture creation, Trim Sheet technique, pixel art, and basic animation. 
+    I enjoy expanding my skill set and adapting to different creative challenges.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<h2>Skills</h2>
+
+<div class="skills-grid">
+
+  <div class="skill-card">
+    <h3>🧊 3D Modeling</h3>
+    <p>3DS Max / ZBrush / Blender</p>
+    <div class="progress"><span style="width:100%"></span></div>
+  </div>
+
+    <div class="skill-card">
+    <h3>🎨 Texturing</h3>
+    <p>Substance 3D Painter & Designer & Sampler / Photoshop / Trim Sheet</p>
+    <div class="progress"><span style="width:92%"></span></div>
+  </div>
+
+  <div class="skill-card">
+    <h3>🎮 Render & Shader </h3>
+    <p>Unreal Engine 5 / Marmoset Toolbag 4</p>
+    <div class="progress"><span style="width:85%"></span></div>
+  </div>
+
+  <div class="skill-card">
+    <h3>✨ VFX & Programming</h3>
+    <p>UE5 Niagara System / C++ / Python / HTML / CSS</p>
+    <div class="progress"><span style="width:50%"></span></div>
+  </div>
+
+</div>
+
+</section>
+
+
+<!-- PROJECTS -->
+
+<section id="projects">
+
+<h2>Projects</h2>
+
+<div class="project-grid">
+
+    <div class="project-card"
+        onclick="openProject(
+        'Cult Scene(TBD)',
+        'assets/project1_cover.png',
+        'https://www.youtube.com/embed/arHeDT_pTuU?si=BrDKv0GCD2ITzaKc',
+        ['assets/project1_1.jpg','assets/project1_2.jpg','assets/project1_3.jpg'],
+        'Stylized forest environment created in Unreal Engine with dynamic lighting.'
+        )">
+
+        <img src="assets/project1_cover.png">
+    </div>
+
+
+    <div class="project-card"
+        onclick="openProject(
+        'Tavern Builder',
+        'assets/project2_cover.png',
+        'https://www.youtube.com/embed/qoIYan7Rv20?si=azsJbRNvUF4w4rv-',
+        ['assets/project2-1.PNG','assets/project2-2.PNG','assets/project2-3.PNG','assets/project2-4.PNG'],
+        'Stylized abandoned temple environment created in UE5.'
+    )">
+
+    <img src="assets/project2_cover.png" alt="TavernBuilderCover">
+
+    </div>
+
+    
+    <div class="project-card"
+        onclick="openProject(
+        'classroom.mp4',
+        'assets/project3_cover.jpg',
+        'https://www.youtube.com/embed/arHeDT_pTuU?si=CA7XsssOQi8-abyX',
+        ['assets/project3_1.jpg','assets/project3_2.jpg','assets/project3_3.jpg', 
+        'assets/project3_4.jpg','assets/project3_5.png','assets/project3_6.png', 'assets/project3_7.png'],
+        'Stylized abandoned temple environment created in UE5.'
+    )">
+
+    <img src="assets/project3_cover.jpg" alt="OldSchoolCover">
+
+    </div>
+
+
+
+</div>
+
+<br>
+
+<!-- second -->
+
+<div class="project-grid">
+
+    <div class="project-card"
+        onclick="openProject(
+        'Redemption',
+        'assets/project4_cover.png',
+        'https://www.youtube.com/embed/rg1KFUkcLbE?si=WsULiDRGc_EOwDnO',
+        ['assets/project4_1.png','assets/project4_2.png','assets/project4_3.png',
+        'assets/project4_4.png','assets/project4_5.png','assets/project4_6.png',
+        'assets/project4_7.png','assets/project4_8.png','assets/project4_9.png'],
+        'Stylized forest environment created in Unreal Engine with dynamic lighting.'
+        )">
+
+        <img src="assets/project4_cover.png">
+    </div>
+
+
+    <div class="project-card"
+        onclick="openProject(
+        'Bunny Train',
+        'assets/project5_cover.png',
+        'https://www.youtube.com/embed/ABC123XYZ',
+        ['assets/project5_1.png','assets/project5_2.png','assets/project5_3.png'],
+        'Stylized abandoned temple environment created in UE5.'
+    )">
+
+    <img src="assets/project5_cover.png" alt="BunnyTrainCover">
+
+    </div>
+
+    
+    <div class="project-card"
+        onclick="openProject(
+        'The Butcher',
+        'assets/project6_cover.png',
+        'https://www.youtube.com/embed/w6FGZCzjW3c?si=BBrDLLEr3itchptu',
+        ['assets/project6_1.png','assets/project6_2.png','assets/project6_3.png'],
+        'Stylized abandoned temple environment created in UE5.'
+    )">
+
+    <img src="assets/project6_cover.png" alt="TheButcherCover">
+
+    </div>
+
+
+
+</div>
+
+</section>
+
+
+
+<!-- VIDEOS -->
+
+<section id="videos">
+
+<h2>Videos</h2>
+
+<div class="video-grid">
+<iframe src="https://www.youtube.com/embed/wSrslLmE8Gk?si=tkZM2icjJqFmOtoQ"></iframe> <!-- Life on Mars -->
+<iframe src="https://www.youtube.com/embed/QdR6D7RK-AY?si=EF440_Enb3q55MDt"></iframe> <!-- Space Hamdyssey-->
+<iframe src="https://www.youtube.com/embed/QdR6D7RK-AY?si=EF440_Enb3q55MDt"></iframe> <!-- Strasbourg-->
+</div>
+
+<br>
+
+<div class="video-grid">
+<iframe src="https://www.youtube.com/embed/q7qFpnLHvF8?si=9-0MRjgmROhKLplb"></iframe> <!-- SD 30 days challenge Day 14 -->
+<iframe src="https://www.youtube.com/embed/uvh8JFoZaBg?si=kx3cNa7tAJNA3isF"></iframe> <!-- SD 30 days challenge Day 15-->
+<iframe src="https://www.youtube.com/embed/wSrslLmE8Gk?si=tkZM2icjJqFmOtoQ"></iframe> <!-- Spooky Ghost-->
+</div>
+
+</section>
+
+
+<!-- EXPERIENCE & EDUCATION -->
+
+<section id="experience">
+
+<h2>Experience & Education</h2>
+
+<div class="timeline">
+
+  <div class="timeline-item">
+    <span>Oct 2024 – Present</span>
+    <h3>3D Environment Artist (The Nth Elyment)</h3>
+    <p>
+      Created high-quality 3D props and environments in a realistic medieval fantasy style with optimized 
+      topology for real-time rendering. Developed modular textures using Substance Designer and trim sheet 
+      workflows, and collaborated with level designers to enhance visual storytelling.
+    </p>
+  </div>
+
+  <div class="timeline-item">
+    <span>Sep 2022 – May 2024</span>
+    <h3>Game Programming Course (St. Lawrence College)</h3>
+    <p>
+      Graduated from a Game Programming program in Canada with a 3.94 GPA, 
+      building strong skills in shader development, real-time rendering, and engine workflows. 
+      The Capstone project 'Redemption' allows me to effectively bridge art and engineering, 
+      supporting efficient collaboration and high-quality production.
+    </p>
+  </div>
+
+  <div class="timeline-item">
+    <span>Oct 2021 – Mar 2022</span>
+    <h3>3D Artist (GNC Solution)</h3>
+    <p>
+      Produced and implemented 3D structural, furniture, and character assets 
+      in Unreal Engine 4 for virtual office and retail environments, 
+      working closely with team members to ensure visual quality and performance.
+    </p>
+  </div>
+
+  <div class="timeline-item">
+    <span>Sep 2020 – Feb 2021</span>
+    <h3>3D Artist (National University of Cultural Heritage)</h3>
+    <p>
+      Processed and textured 3D-scanned historical artifacts using ZBrush and Photoshop, 
+      producing finalized models and renders for heritage conservation documentation.
+    </p>
+  </div>
+
+  <div class="timeline-item">
+    <span>Mar 2017 – Feb 2022</span>
+    <h3>Conservation Science Course (National University of Cultural Heritage)</h3>
+    <p>
+      Graduated in 2022 from Korean National University of Cultural Heritage (한국전통문화대학교) 
+      with a Bachelor’s degree in Conservation Science. Studied the analysis, 
+      processing, and preservation of stone, wood, metal, and painted surfaces, 
+      focusing on preparing historical artifacts for museum exhibition. 
+      Gained hands-on experience with chemical conservation methods and worked as an English guide in a museum, 
+      supporting international visitors and cultural outreach.
+    </p>
+  </div>
+
+</div>
+
+</section>
+
+
+
+<!-- RESUME -->
+
+<section id="resume">
+
+<h2>Resume</h2>
+
+<div class="resume-container">
+
+  <iframe
+    src="assets/resume.pdf"
+    width="100%"
+    height="600px">
+  </iframe>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<h2>Contact</h2>
+
+<div class="contact-box">
+
+  <div class="contact-info">
+
+    <p>📧 Email: yourname@email.com</p>
+    <p>📍 Location: Ontario, Canada</p>
+
+    <p>🔗 LinkedIn:
+      <a href="https://www.linkedin.com/in/soomin-lee-ta/" target="_blank">
+        linkedin.com/in/soomin-lee-ta/
+      </a>
+    </p>
+
+    <p>🎨 ArtStation:
+      <a href="https://www.artstation.com/soomin_ta" target="_blank">
+        artstation.com/soomin_ta
+      </a>
+    </p>
+
+  </div>
+
+
+  <form>
+
+    <input type="text" placeholder="Name" required>
+    <input type="email" placeholder="Email" required>
+
+    <textarea rows="5" placeholder="Message"></textarea>
+
+    <button type="submit">Send</button>
+
+  </form>
+
+
+</div>
+
+</section>
+
+
+
+<!-- PROJECT MODAL -->
+
+<div class="modal" id="modal">
+
+  <div class="project-modal">
+
+    <span class="close" onclick="closeModal()">×</span>
+
+    <h2 id="modalTitle"></h2>
+
+    <iframe id="modalVideo"></iframe>
+
+    <div id="modalGallery"></div>
+
+    <p id="modalDesc"></p>
+
+  </div>
+
+</div>
+
+
+<!-- JS -->
+<script src="script.js"></script>
+
+</body>
+</html>

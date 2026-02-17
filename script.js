@@ -26,6 +26,10 @@ imageModal.onclick = (e) => {
     if (e.target === imageModal) imageModal.style.display = "none";
 };
 
+modal.onclick = (e) => {
+    if (e.target === modal) modal.style.display = "none";
+};
+
 document.addEventListener("keydown", (e) => {
     if (imageModal.style.display === "block"){
       if (e.key === "ArrowLeft") OpenImage(CurrentImageIndex - 1);

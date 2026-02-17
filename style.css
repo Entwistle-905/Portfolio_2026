@@ -173,6 +173,10 @@ iframe {
   box-shadow: 0 0 25px rgba(255,182,255,0.3);
 }
 
+.resume-container iframe {
+  height : 700px;
+}
+
 
 /* CONTACT */
 

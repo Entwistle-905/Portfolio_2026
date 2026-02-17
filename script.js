@@ -14,8 +14,11 @@ document.getElementById("downloadBtn").addEventListener("click", () => {
 
 });
 
+//project modal
+const modal = document.getElementById("modal");
+
 //getting the image modal  used to zoom images and binding events to it
-let imageModal = document.getElementById("image-modal")
+const imageModal = document.getElementById("image-modal")
 let projectImages = null;
 let CurrentImageIndex = 0;
 
@@ -24,11 +27,15 @@ imageModal.onclick = (e) => {
 };
 
 document.addEventListener("keydown", (e) => {
-    if (imageModal.style.display !== "block") return;
-
-    if (e.key === "ArrowLeft") OpenImage(CurrentImageIndex - 1);
-    if (e.key === "ArrowRight") OpenImage(CurrentImageIndex + 1);
-    if (e.key === "Escape") imageModal.style.display = "none";
+    if (imageModal.style.display === "block"){
+      if (e.key === "ArrowLeft") OpenImage(CurrentImageIndex - 1);
+      if (e.key === "ArrowRight") OpenImage(CurrentImageIndex + 1);
+      if (e.key === "Escape") imageModal.style.display = "none";
+    }
+    else if (modal.style.display === "flex"){
+      if (e.key === "Escape") modal.style.display = "none";
+    }
+    
 });
 
 // Close modal
@@ -42,8 +49,6 @@ document.getElementById("imageModalNextImage").onclick = () => OpenImage(Current
 /* PROJECT VIEWER */
 
 function openProject(title, cover, video, images, desc){
-
-  const modal = document.getElementById("modal");
 
   document.getElementById("modalTitle").innerText = title;
   document.getElementById("modalVideo").src = video;

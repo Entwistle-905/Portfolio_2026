@@ -52,11 +52,12 @@ document.getElementById("imageModalNextImage").onclick = () => OpenImage(Current
 
 /* PROJECT VIEWER */
 
-function openProject(title, cover, video, images, desc){
+function openProject(title, cover, video, images, desc1, desc2){
 
   document.getElementById("modalTitle").innerText = title;
   document.getElementById("modalVideo").src = video;
-  document.getElementById("modalDesc").innerText = desc;
+  document.getElementById("modalDesc").innerText = desc1;
+  document.getElementById("modalTool").innerText = desc2;
 
   const gallery = document.getElementById("modalGallery");
   gallery.innerHTML = "";

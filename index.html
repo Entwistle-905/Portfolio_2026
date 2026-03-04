@@ -113,7 +113,7 @@
     <div class="skill-card">
       <h3>👩‍💻 Collaboration</h3>
       <p>Jira: Time management
-        <br>GitHub Bash</p>
+        <br>GitHub Bash: Collaboration</p>
       <div class="progress"><span style="width:70%"></span></div>
     </div>
 
@@ -132,14 +132,28 @@
 
     <div class="project-card"
         onclick="openProject(
-        'Cult Scene(TBD)',
+        'Sanctum of the Blooming Eye',
         'assets/project1_cover.png',
         'https://www.youtube.com/embed/arHeDT_pTuU?si=BrDKv0GCD2ITzaKc',
         ['assets/project1_1.jpg','assets/project1_2.jpg','assets/project1_3.jpg'],
-        'Stylized forest environment created in Unreal Engine with dynamic lighting.'
+        `Sanctum of the Blooming Eye appears to be a hidden sanctuary for desperate prayers. It is a quiet refuge where the faithful seek safety, hope, and momentary peace. Candles flicker softly against aged stone, and devotion fills the air with silence. 
+        
+        But serenity is only an illusion. 
+        
+        The Blooming Eye watches. It does not simply receive prayers. It demands obedience, devotion, and sight. Behind one of the shelves lies a concealed passage, leading to a chamber reserved for those who have been “chosen.” There is no defiance within these walls. Only offering.`,
+
+        `I worked on this project from early concept planning and blockout to final lighting and rendering.
+
+        The environment was created using 3ds Max for modular modeling and scene blockout, and ZBrush for sculpting high-poly asset like the statue. Textures were developed using Substance Designer (procedural materials) and Substance Painter (asset texturing), with additional refinement in Photoshop. The scenes were created and recorded with Level Sequences in UE5 and I edited and and created the video.
+
+        A major focus of this project was practicing a Trim Sheet workflow. I designed reusable trim textures to maintain consistency across architectural elements while optimizing texture memory and production time. This approach allowed for high visual detail while keeping assets modular and performance-conscious.
+
+        Extensive layout exploration was done during the blockout phase to refine composition, focal hierarchy, and player eye direction. Lighting was developed in Unreal Engine 5, emphasizing contrast between warm candlelight and cooler ambient tones to enhance narrative tension.
+
+        For prop distribution, I used UE5’s Procedural Content Generation (PCG) system. Candles and books were procedurally spawned with controlled randomness, custom density adjustments, and collision handling to prevent overlap. This allowed for efficient iteration while maintaining natural variation and scene believability.`
         )">
 
-        <img src="assets/project1_cover.png">
+        <img src="assets/project1_cover.png", alt="SanctumOfTheBloomingEye">
     </div>
 
 
@@ -148,8 +162,26 @@
         'Tavern Builder',
         'assets/project2_cover.png',
         'https://www.youtube.com/embed/qoIYan7Rv20?si=azsJbRNvUF4w4rv-',
-        ['assets/project2-1.PNG','assets/project2-2.PNG','assets/project2-3.PNG','assets/project2-4.PNG'],
-        'Stylized abandoned temple environment created in UE5.'
+        ['assets/project2-1.PNG','assets/project2-2.PNG','assets/project2-3.PNG',
+        'assets/project2-4.PNG','assets/project2-5.PNG','assets/project2-6.PNG'],
+        `Are you interested in designing and decorating taverns?
+        
+        Grab a mop, raise your towel, and use a touch of magic to restore a forgotten space. Clean the worn wooden floors, replace old wallpapers, decorate the interior, and transform the tavern into a thriving medieval fantasy business.`,
+        `Tavern Builder is a sandbox-style simulation game developed by The Nth Elyment using Unreal Engine 5. The project features a realistic medieval fantasy setting where players renovate and customize their own tavern environment. The project was developed over 6–8 months in a studio environment.
+
+        I handled:
+
+        ◻ Modular environment modeling in 3ds Max
+        ◻ High-poly sculpting in ZBrush where needed
+        ◻ Procedural material creation in Substance Designer
+        ◻ Asset texturing in Substance Painter
+        ◻ Texture refinement and graphic elements in Photoshop
+        ◻ Scene assembly, lighting, and material setup in Unreal Engine 5
+        ◻ VFXs using Niagara
+
+        A key focus was building a modular system for walls, floors, beams, and decorative elements to support flexible layout customization within the sandbox gameplay. Materials were designed to achieve a grounded, realistic medieval aesthetic while remaining optimized for in-engine performance.
+
+        As the only 3D artist on the team, I was responsible for maintaining visual consistency, asset pipeline organization, and ensuring all environment assets were game-ready and performance-conscious.`
     )">
 
     <img src="assets/project2_cover.png" alt="TavernBuilderCover">
@@ -164,7 +196,28 @@
         'https://www.youtube.com/embed/arHeDT_pTuU?si=CA7XsssOQi8-abyX',
         ['assets/project3_1.jpg','assets/project3_2.jpg','assets/project3_3.jpg', 
         'assets/project3_4.jpg','assets/project3_5.png','assets/project3_6.png', 'assets/project3_7.png'],
-        'Stylized abandoned temple environment created in UE5.'
+        `I found an old mp4 file in the computer..
+        
+        I don't know who recorded, but I feel like I shouldn't check it out..`,
+        `Classroom.mp4 is a realistic horror environment project focused on lighting, atmosphere, and visual storytelling. The project is structured around two contrasting scenes:
+
+        ◻ A blue-toned, organized classroom representing memory and normality
+        ◻ A red, chaotic classroom representing psychological collapse
+
+        The two spaces share a similar layout but are differentiated primarily through lighting design, color theory, prop arrangement, and environmental storytelling. The transition between them was designed to emphasize emotional contrast and spatial disorientation.
+
+        The environment was created using:
+
+        ◻ 3ds Max for modeling and modular asset creation
+        ◻ Substance Painter for asset texturing
+        ◻ Photoshop for texture refinement
+        ◻ Unreal Engine 5 for scene assembly, lighting, and post-processing
+        ◻ Niagara for subtle atmospheric effects like floating dusts
+        ◻ Adobe Premiere Pro for final video editing and presentation
+
+        A major focus of this project was cinematic lighting inside Unreal Engine 5. I explored strong color contrast (cool vs. saturated red), controlled spotlight composition, and flickering light effects to guide the viewer’s attention and build tension.
+
+        To reinforce the “found footage” concept, I used Post Process Volume adjustments to simulate an old video recording aesthetic, including exposure control, color grading, film grain, and subtle distortion effects. The final presentation was edited to resemble a corrupted video file, enhancing the horror atmosphere.`
     )">
 
     <img src="assets/project3_cover.jpg" alt="OldSchoolCover">
@@ -189,20 +242,23 @@
         ['assets/project4_1.png','assets/project4_2.png','assets/project4_3.png',
         'assets/project4_4.png','assets/project4_5.png','assets/project4_6.png',
         'assets/project4_7.png','assets/project4_8.png','assets/project4_9.png'],
-        'Stylized forest environment created in Unreal Engine with dynamic lighting.'
+        `Stylized forest environment created in Unreal Engine with dynamic lighting.`,
+        `Toools.`
         )">
 
-        <img src="assets/project4_cover.png">
+        <img src="assets/project4_cover.png" alt="redemptioncover">
     </div>
 
 
     <div class="project-card"
         onclick="openProject(
-        'Bunny Train',
+        'Bunny Express',
         'assets/project5_cover.png',
-        'https://www.youtube.com/embed/ABC123XYZ',
-        ['assets/project5_1.png','assets/project5_2.png','assets/project5_3.png'],
-        'Stylized abandoned temple environment created in UE5.'
+        'https://www.youtube.com/embed/FkkUtBNPn9M?si=bFIm9GZp51yK_E-k',
+        ['assets/project5_1.png','assets/project5_2.png','assets/project5_3.png',
+        'assets/project5_4.png','assets/project5_5.jpg','assets/project5_6.png'],
+        `Stylized abandoned temple environment created in UE5.`,
+        `Toools.`
     )">
 
     <img src="assets/project5_cover.png" alt="BunnyTrainCover">
@@ -216,7 +272,8 @@
         'assets/project6_cover.png',
         'https://www.youtube.com/embed/w6FGZCzjW3c?si=BBrDLLEr3itchptu',
         ['assets/project6_1.png','assets/project6_2.png','assets/project6_3.png'],
-        'Stylized abandoned temple environment created in UE5.'
+        `Stylized abandoned temple environment created in UE5.`,
+        `Toools.`
     )">
 
     <img src="assets/project6_cover.png" alt="TheButcherCover">
@@ -406,7 +463,10 @@
 
     <div id="modalGallery"></div>
 
-    <p id="modalDesc"></p>
+    <br><i><p id="modalDesc"></p> </i><br><br>
+    
+    <hr><br>
+    <p id="modalTool"></p>
 
   </div>
 
